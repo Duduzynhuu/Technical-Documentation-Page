@@ -1,0 +1,157 @@
+/* ROOT */
+:root {
+  --c1: #fff;
+  --c2: #000;
+  --c3: #eee;
+}
+
+/* ALL */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: var(--c1);
+  margin: 0;
+  color: var(--c2);
+  font-family: tahoma;
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+/* CODE AREAS */
+code {
+  background-color: var(--c3);
+  font-weight: bold;
+}
+
+pre {
+  background-color: var(--c3);
+  border-left: 3px solid blue;
+  color: var(--c2);
+  font-weight: bold;
+  margin-left: 30px;
+  padding: 18px;
+  width: 100%;
+}
+
+/* IMAGENS */
+.pictures {
+  display: flex;
+  margin: auto;
+  width: 500px;
+}
+
+/* HEADERS */
+
+h1 {
+  font-size: 3rem;
+  color: var(--c2);
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: var(--c2);
+}
+
+h3 {
+  background-color: var(--c2);
+  color: var(--c1);
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 3.5px;
+  width: auto;
+}
+
+h2:hover,
+h3:hover {
+  text-decoration: underline;
+}
+
+.pag-link {
+  text-decoration: none;
+}
+
+/* MAIN AREA */
+.main-section header {
+  color: var(--c2);
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 15px;
+}
+
+#main-doc {
+  height: auto;
+  margin-left: 30%;
+  margin-right: 5%;
+  padding: 1px 18px;
+}
+
+.main-section p,
+h2,
+h3 {
+  margin-left: 25px;
+}
+
+/* NAVIGATION */
+#navbar {
+  background-color: var(--c1);
+  border-right: 2px solid black;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  position: fixed;
+  width: 30%;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#navbar li a {
+  border-top: 1px solid black;
+  color: var(--c2);
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#navbar header {
+  font-size: 1.7rem;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar li a:hover {
+  background-color: var(--c3);
+  color: var(--c2);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVES  */
+@media screen and (max-width: 768px) {
+  /* RESPONSIVE MAIN */
+  #main-doc {
+    margin: 30px auto auto auto;
+  }
+
+  /* RESPONSIVE NAVGIATION */
+  #navbar {
+    border: 2px solid black;
+    height: auto;
+    overflow: auto;
+    position: static;
+    top: 0;
+    width: 100%;
+  }
+
+  #navbar a {
+    text-align: left;
+  }
+}
