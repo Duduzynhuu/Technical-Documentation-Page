@@ -1,2 +1,2 @@
 # Technical-Documentation-Page
-![Desktop Preview image]('/design/desktop.png')
+![Desktop Preview image]('./design/desktop.png')
